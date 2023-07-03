@@ -4,12 +4,13 @@ console.log("I am working!");
 
 let x = 0;
 // on button click
-$(".Minusdiv1").on("click", () => {
+document.getElementById("minusdiv1").on("click", () => {
+  console.log("get success");
   // increment & set new value
   $(".Inputfield1.w-input").val(++x);
 });
 
-$(".Minusdiv1").on("click", () => {
+$(".minusdiv1").on("click", () => {
   // decrement & set new value
   if (x > 0) {
     $(".Inputfield1.w-input").val(--x);
