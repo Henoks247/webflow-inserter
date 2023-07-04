@@ -88,26 +88,26 @@ function bedbathhoursum() {
   return bathroomx + bedroomx;
 }
 
-function extrashoursum() {
-  let x = 2;
-  if ((extraboxIroningstate = false)) {
-    ++x;
-  }
-  if ((extraboxFridgestate = false)) {
-    ++x;
-  }
-  if ((extraboxLaundrystate = false)) {
-    ++x;
-  }
-  if ((extraboxOvenstate = false)) {
-    ++x;
-  }
-  if ((extraboxWindowsstate = false)) {
-    ++x;
-  }
-  console.log(x);
-  return x;
-}
+// function extrashoursum() {
+//   let x = 2;
+//   if ((extraboxIroningstate = false)) {
+//     ++x;
+//   }
+//   if ((extraboxFridgestate = false)) {
+//     ++x;
+//   }
+//   if ((extraboxLaundrystate = false)) {
+//     ++x;
+//   }
+//   if ((extraboxOvenstate = false)) {
+//     ++x;
+//   }
+//   if ((extraboxWindowsstate = false)) {
+//     ++x;
+//   }
+//   console.log(x);
+//   return x;
+// }
 
 // Button 1
 // Listen and log clicks
