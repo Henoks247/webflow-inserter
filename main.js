@@ -10,7 +10,7 @@ $(".plusdiv1").on("click", () => {
   console.log("get success");
   // increment & set new value
   $(".inputfield1.w-input").val(++bedroomx);
-  $(".summarytextright").text(" " + finalhour() + " hours");
+  $(".summarytextright").text(finalhour() + " hours");
   $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
 });
 
