@@ -196,5 +196,3 @@ $("#extraboxOven").click(function () {
     console.log("made true");
   }
 });
-
-$(".summarytextright").text(" " + extrashoursum() + " hours");
