@@ -10,8 +10,9 @@ $(".plusdiv1").on("click", () => {
   console.log("get success");
   // increment & set new value
   $(".inputfield1.w-input").val(++bedroomx);
-  $(".summarytextright").text(finalhour() + " hours");
+  $(".summaryhours").text(finalhour() + " hours");
   $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
+  $(".summaryprice").text(finalprice() + " GBP");
 });
 
 $(".minusdiv1").on("click", () => {
