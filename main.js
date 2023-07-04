@@ -94,9 +94,13 @@ $(".inputfield2.w-input").change(function () {
 let extraboxIroningstate = true;
 $("#ironingtag").hide();
 let extraboxLaundrystate = true;
+$("#laundrytag").hide();
 let extraboxWindowsstate = true;
+$("#windowstag").hide();
 let extraboxFridgestate = true;
+$("#fridgetag").hide();
 let extraboxOvenstate = true;
+$("#oventag").hide();
 
 // calculator function
 function bedbathhoursum() {
@@ -158,12 +162,16 @@ $("#extraboxIroning").click(function () {
     $(".summaryprice").text(finalprice() + " GBP");
     // display tag
     $("#ironingtag").show();
+    // activate border
+    $("extraboxIroning").style.border = "1px solid #1327ff";
   } else {
     extraboxIroningstate = true;
     console.log("made true");
     $(".summaryhours").text(finalhour() + " hours");
     $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
     $(".summaryprice").text(finalprice() + " GBP");
+    // hide tag
+    $("#ironingtag").hide();
   }
 });
 
@@ -179,12 +187,16 @@ $("#extraboxLaundry").click(function () {
     $(".summaryhours").text(finalhour() + " hours");
     $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
     $(".summaryprice").text(finalprice() + " GBP");
+    // display tag
+    $("#laundrytag").show();
   } else {
     extraboxLaundrystate = true;
     console.log("made true");
     $(".summaryhours").text(finalhour() + " hours");
     $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
     $(".summaryprice").text(finalprice() + " GBP");
+    // hide tag
+    $("#laundrytag").hide();
   }
 });
 
@@ -200,12 +212,16 @@ $("#extraboxWindows").click(function () {
     $(".summaryhours").text(finalhour() + " hours");
     $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
     $(".summaryprice").text(finalprice() + " GBP");
+    // display tag
+    $("#windowstag").show();
   } else {
     extraboxWindowsstate = true;
     console.log("made true");
     $(".summaryhours").text(finalhour() + " hours");
     $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
     $(".summaryprice").text(finalprice() + " GBP");
+    // hide tag
+    $("#windowstag").hide();
   }
 });
 
@@ -221,12 +237,16 @@ $("#extraboxFridge").click(function () {
     $(".summaryhours").text(finalhour() + " hours");
     $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
     $(".summaryprice").text(finalprice() + " GBP");
+    // display tag
+    $("#fridgetag").show();
   } else {
     extraboxFridgestate = true;
     console.log("made true");
     $(".summaryhours").text(finalhour() + " hours");
     $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
     $(".summaryprice").text(finalprice() + " GBP");
+    // hide tag
+    $("#fridgetag").hide();
   }
 });
 
@@ -242,11 +262,15 @@ $("#extraboxOven").click(function () {
     $(".summaryhours").text(finalhour() + " hours");
     $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
     $(".summaryprice").text(finalprice() + " GBP");
+    // display tag
+    $("#oventag").show();
   } else {
     extraboxOvenstate = true;
     console.log("made true");
     $(".summaryhours").text(finalhour() + " hours");
     $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
     $(".summaryprice").text(finalprice() + " GBP");
+    // hide tag
+    $("#oventag").hide();
   }
 });
