@@ -89,23 +89,32 @@ function bedbathhoursum() {
 }
 
 function extrashoursum() {
-  let x = 2;
-  if ((extraboxIroningstate = false)) {
+  let x = 0;
+  if (extraboxIroningstate) {
+    console.log("not clicked");
+  } else {
     ++x;
   }
-  if ((extraboxFridgestate = false)) {
+  if (extraboxFridgestate) {
+    console.log("not clicked");
+  } else {
     ++x;
   }
-  if ((extraboxLaundrystate = false)) {
+  if (extraboxLaundrystate) {
+    console.log("not clicked");
+  } else {
     ++x;
   }
-  if ((extraboxOvenstate = false)) {
+  if (extraboxOvenstate) {
+    console.log("not clicked");
+  } else {
     ++x;
   }
-  if ((extraboxWindowsstate = false)) {
+  if (extraboxWindowsstate) {
+    console.log("not clicked");
+  } else {
     ++x;
   }
-  console.log(x);
   return x;
 }
 
