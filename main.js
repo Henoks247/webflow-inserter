@@ -114,7 +114,7 @@ $("#extraboxIroning").click(function () {
   } else {
     extraboxIroningstate = true;
     console.log("made true");
-    console.log(extrashoursum, bedbathhoursum);
+    console.log(extrashoursum(), bedbathhoursum());
   }
 });
 
