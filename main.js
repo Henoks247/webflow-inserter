@@ -82,7 +82,7 @@ function bedbathhoursum() {
 }
 
 function extrashoursum() {
-  let x = 0;
+  let x = 2;
   if ((extraboxIroningstate = false)) {
     ++x;
   }
@@ -128,6 +128,7 @@ $("#extraboxLaundry").click(function () {
   if (extraboxLaundrystate) {
     extraboxLaundrystate = false;
     console.log("made false");
+    console.log(extraboxLaundrystate);
   } else {
     extraboxLaundrystate = true;
     console.log("made true");
