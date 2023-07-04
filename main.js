@@ -76,6 +76,7 @@ $(".inputfield2.w-input").change(function () {
   }
 });
 
+// Button 1
 // Listen and log clicks
 // declare state
 let extraboxIroningstate = true;
@@ -87,6 +88,70 @@ $("#extraboxIroning").click(function () {
     console.log("made false");
   } else {
     extraboxIroningstate = true;
+    console.log("made true");
+  }
+});
+
+// Button 2
+// Listen and log clicks
+// declare state
+let extraboxLaundrystate = true;
+
+$("#extraboxLaundry").click(function () {
+  // if here
+  if (extraboxLaundrystate) {
+    extraboxLaundrystate = false;
+    console.log("made false");
+  } else {
+    extraboxLaundrystate = true;
+    console.log("made true");
+  }
+});
+
+// Button 3
+// Listen and log clicks
+// declare state
+let extraboxWindowsstate = true;
+
+$("#extraboxWindows").click(function () {
+  // if here
+  if (extraboxWindowsstate) {
+    extraboxWindowsstate = false;
+    console.log("made false");
+  } else {
+    extraboxWindowsstate = true;
+    console.log("made true");
+  }
+});
+
+// Button 4
+// Listen and log clicks
+// declare state
+let extraboxFridgestate = true;
+
+$("#extraboxFridge").click(function () {
+  // if here
+  if (extraboxFridgestate) {
+    extraboxFridgestate = false;
+    console.log("made false");
+  } else {
+    extraboxFridgestate = true;
+    console.log("made true");
+  }
+});
+
+// Button 5
+// Listen and log clicks
+// declare state
+let extraboxOvenstate = true;
+
+$("#extraboxOven").click(function () {
+  // if here
+  if (extraboxOvenstate) {
+    extraboxOvenstate = false;
+    console.log("made false");
+  } else {
+    extraboxOvenstate = true;
     console.log("made true");
   }
 });
