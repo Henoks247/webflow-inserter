@@ -4,7 +4,7 @@ console.log($(".extraheading").text());
 
 let x = 0;
 // on button click
-$document.getElementById("minusdiv1").on("click", () => {
+$(".minusdiv1").on("click", () => {
   console.log("get success");
   // increment & set new value
   $(".Inputfield1.w-input").val(++x);
