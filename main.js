@@ -10,6 +10,7 @@ $(".plusdiv1").on("click", () => {
   console.log("get success");
   // increment & set new value
   $(".inputfield1.w-input").val(++bedroomx);
+  $(".summarytextright").text(" " + extrashoursum() + " hours");
 });
 
 $(".minusdiv1").on("click", () => {
@@ -17,6 +18,7 @@ $(".minusdiv1").on("click", () => {
   if (bedroomx > 0) {
     $(".inputfield1.w-input").val(--bedroomx);
   }
+  $(".summarytextright").text(" " + extrashoursum() + " hours");
 });
 
 /* This next part was added post-video recording added
@@ -28,7 +30,6 @@ $(".minusdiv1").on("click", () => {
 
 // on input value change
 $(".inputfield1.w-input").change(function () {
-  $(".summarytextright").text(" " + extrashoursum() + " hours");
   // convert input value to number
   const num = Number($(this).val());
   // if it's a number
@@ -66,7 +67,6 @@ $(".minusdiv2").on("click", () => {
 
 // on input value change
 $(".inputfield2.w-input").change(function () {
-  $(".summarytextright").text(" " + extrashoursum() + " hours");
   // convert input value to number
   const num = Number($(this).val());
   // if it's a number
