@@ -14,7 +14,7 @@ $(".plusdiv1").on("click", () => {
 
 $(".minusdiv1").on("click", () => {
   // decrement & set new value
-  if (x > 0) {
+  if (bedroomx > 0) {
     $(".inputfield1.w-input").val(--bedroomx);
   }
 });
@@ -51,7 +51,7 @@ $(".plusdiv2").on("click", () => {
 
 $(".minusdiv2").on("click", () => {
   // decrement & set new value
-  if (x > 0) {
+  if (bathroomx > 0) {
     $(".inputfield2.w-input").val(--bathroomx);
   }
 });
