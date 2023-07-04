@@ -75,7 +75,7 @@ $(".inputfield2.w-input").change(function () {
   } else {
     console.log("Not a number");
   }
-  $(".summarytextright").text(" " + extrashoursum + " hours");
+  $(".summarytextright").text(" " + extrashoursum() + " hours");
 });
 // Declarations
 
