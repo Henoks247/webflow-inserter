@@ -10,7 +10,8 @@ $(".plusdiv1").on("click", () => {
   console.log("get success");
   // increment & set new value
   $(".inputfield1.w-input").val(++bedroomx);
-  $(".summarytextright").text(" " + extrashoursum() + " hours");
+  $(".summarytextright").text(" " + finalhour() + " hours");
+  $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
 });
 
 $(".minusdiv1").on("click", () => {
@@ -118,6 +119,17 @@ function extrashoursum() {
     ++x;
   }
   return x;
+}
+
+//  Final hour calculator
+
+function finalhour() {
+  return extrashoursum() / 2 + (bathroomx + bedroomx) * 0.75;
+}
+// Final price calculator
+
+function finalprice() {
+  return finalhour() * 18;
 }
 
 // Button 1
