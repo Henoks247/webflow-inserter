@@ -1,21 +1,21 @@
 console.log("code link functionality check");
 
-console.log("I am working!");
+// console.log("I am working!");
 
-let x = 0;
-// on button click
-document.getElementById("minusdiv1").on("click", () => {
-  console.log("get success");
-  // increment & set new value
-  $(".Inputfield1.w-input").val(++x);
-});
+// let x = 0;
+// // on button click
+// document.getElementById("minusdiv1").on("click", () => {
+//   console.log("get success");
+//   // increment & set new value
+//   $(".Inputfield1.w-input").val(++x);
+// });
 
-$(".minusdiv1").on("click", () => {
-  // decrement & set new value
-  if (x > 0) {
-    $(".Inputfield1.w-input").val(--x);
-  }
-});
+// $(".minusdiv1").on("click", () => {
+//   // decrement & set new value
+//   if (x > 0) {
+//     $(".Inputfield1.w-input").val(--x);
+//   }
+// });
 
 /* This next part was added post-video recording added
   to make sure the plus and minus work with a manual entry of
