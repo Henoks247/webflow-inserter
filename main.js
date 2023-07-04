@@ -76,6 +76,31 @@ $(".inputfield2.w-input").change(function () {
   }
 });
 
+// calculator function
+function bedbathhoursum() {
+  return bathroomx + bedroomx;
+}
+
+function extrashoursum() {
+  let x = 0;
+  if ((extraboxIroningstate = false)) {
+    ++x;
+  }
+  if ((extraboxFridgestate = false)) {
+    ++x;
+  }
+  if ((extraboxLaundrystate = false)) {
+    ++x;
+  }
+  if ((extraboxOvenstate = false)) {
+    ++x;
+  }
+  if ((extraboxWindowsstate = false)) {
+    ++x;
+  }
+  return x;
+}
+
 // Button 1
 // Listen and log clicks
 // declare state
@@ -89,6 +114,7 @@ $("#extraboxIroning").click(function () {
   } else {
     extraboxIroningstate = true;
     console.log("made true");
+    console.log(extrashoursum, bedbathhoursum);
   }
 });
 
