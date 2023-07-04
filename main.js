@@ -7,13 +7,13 @@ let x = 0;
 $(".minusdiv1").on("click", () => {
   console.log("get success");
   // increment & set new value
-  $(".Inputfield1.w-input").val(++x);
+  $(".inputfield1.w-input").val(++x);
 });
 
 $(".minusdiv1").on("click", () => {
   // decrement & set new value
   if (x > 0) {
-    $(".Inputfield1.w-input").val(--x);
+    $(".inputfield1.w-input").val(--x);
   }
 });
 
@@ -25,7 +25,7 @@ $(".minusdiv1").on("click", () => {
   */
 
 // on input value change
-$(".Inputfield1.w-input").change(function () {
+$(".inputfield1.w-input").change(function () {
   // convert input value to number
   const num = Number($(this).val());
   // if it's a number
