@@ -92,6 +92,7 @@ $(".inputfield2.w-input").change(function () {
 // Declarations
 
 let extraboxIroningstate = true;
+$("#ironingtag").hide();
 let extraboxLaundrystate = true;
 let extraboxWindowsstate = true;
 let extraboxFridgestate = true;
@@ -155,6 +156,8 @@ $("#extraboxIroning").click(function () {
     $(".summaryhours").text(finalhour() + " hours");
     $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
     $(".summaryprice").text(finalprice() + " GBP");
+    // display tag
+    $("#ironingtag").show();
   } else {
     extraboxIroningstate = true;
     console.log("made true");
