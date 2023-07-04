@@ -88,26 +88,26 @@ function bedbathhoursum() {
   return bathroomx + bedroomx;
 }
 
-// function extrashoursum() {
-//   let x = 2;
-//   if ((extraboxIroningstate = false)) {
-//     ++x;
-//   }
-//   if ((extraboxFridgestate = false)) {
-//     ++x;
-//   }
-//   if ((extraboxLaundrystate = false)) {
-//     ++x;
-//   }
-//   if ((extraboxOvenstate = false)) {
-//     ++x;
-//   }
-//   if ((extraboxWindowsstate = false)) {
-//     ++x;
-//   }
-//   console.log(x);
-//   return x;
-// }
+function extrashoursum() {
+  let x = 2;
+  if ((extraboxIroningstate = false)) {
+    ++x;
+  }
+  if ((extraboxFridgestate = false)) {
+    ++x;
+  }
+  if ((extraboxLaundrystate = false)) {
+    ++x;
+  }
+  if ((extraboxOvenstate = false)) {
+    ++x;
+  }
+  if ((extraboxWindowsstate = false)) {
+    ++x;
+  }
+  console.log(x);
+  return x;
+}
 
 // Button 1
 // Listen and log clicks
@@ -115,7 +115,7 @@ function bedbathhoursum() {
 
 $("#extraboxIroning").click(function () {
   // if here
-  if ((extraboxIroningstate = true)) {
+  if (extraboxIroningstate) {
     extraboxIroningstate = false;
     console.log("made false");
   } else {
@@ -131,7 +131,7 @@ $("#extraboxIroning").click(function () {
 
 $("#extraboxLaundry").click(function () {
   // if here
-  if ((extraboxLaundrystate = true)) {
+  if (extraboxLaundrystate) {
     extraboxLaundrystate = false;
     console.log("made false");
     console.log(extraboxLaundrystate);
@@ -147,7 +147,7 @@ $("#extraboxLaundry").click(function () {
 
 $("#extraboxWindows").click(function () {
   // if here
-  if ((extraboxWindowsstate = true)) {
+  if (extraboxWindowsstate) {
     extraboxWindowsstate = false;
     console.log("made false");
   } else {
@@ -162,7 +162,7 @@ $("#extraboxWindows").click(function () {
 
 $("#extraboxFridge").click(function () {
   // if here
-  if ((extraboxFridgestate = true)) {
+  if (extraboxFridgestate) {
     extraboxFridgestate = false;
     console.log("made false");
   } else {
@@ -177,7 +177,7 @@ $("#extraboxFridge").click(function () {
 
 $("#extraboxOven").click(function () {
   // if here
-  if ((extraboxOvenstate = true)) {
+  if (extraboxOvenstate) {
     extraboxOvenstate = false;
     console.log("made false");
   } else {
