@@ -75,6 +75,13 @@ $(".inputfield2.w-input").change(function () {
     console.log("Not a number");
   }
 });
+// Declarations
+
+let extraboxIroningstate = true;
+let extraboxLaundrystate = true;
+let extraboxWindowsstate = true;
+let extraboxFridgestate = true;
+let extraboxOvenstate = true;
 
 // calculator function
 function bedbathhoursum() {
@@ -105,7 +112,6 @@ function extrashoursum() {
 // Button 1
 // Listen and log clicks
 // declare state
-let extraboxIroningstate = true;
 
 $("#extraboxIroning").click(function () {
   // if here
@@ -122,7 +128,6 @@ $("#extraboxIroning").click(function () {
 // Button 2
 // Listen and log clicks
 // declare state
-let extraboxLaundrystate = true;
 
 $("#extraboxLaundry").click(function () {
   // if here
@@ -139,7 +144,6 @@ $("#extraboxLaundry").click(function () {
 // Button 3
 // Listen and log clicks
 // declare state
-let extraboxWindowsstate = true;
 
 $("#extraboxWindows").click(function () {
   // if here
@@ -155,7 +159,6 @@ $("#extraboxWindows").click(function () {
 // Button 4
 // Listen and log clicks
 // declare state
-let extraboxFridgestate = true;
 
 $("#extraboxFridge").click(function () {
   // if here
@@ -171,7 +174,6 @@ $("#extraboxFridge").click(function () {
 // Button 5
 // Listen and log clicks
 // declare state
-let extraboxOvenstate = true;
 
 $("#extraboxOven").click(function () {
   // if here
