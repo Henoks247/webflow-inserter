@@ -28,6 +28,7 @@ $(".minusdiv1").on("click", () => {
 
 // on input value change
 $(".inputfield1.w-input").change(function () {
+  $(".summarytextright").text(" " + extrashoursum() + " hours");
   // convert input value to number
   const num = Number($(this).val());
   // if it's a number
@@ -37,7 +38,6 @@ $(".inputfield1.w-input").change(function () {
   } else {
     console.log("Not a number");
   }
-  $(".summarytextright").text(" " + extrashoursum + " hours");
 });
 
 // For bathrooms
@@ -66,6 +66,7 @@ $(".minusdiv2").on("click", () => {
 
 // on input value change
 $(".inputfield2.w-input").change(function () {
+  $(".summarytextright").text(" " + extrashoursum() + " hours");
   // convert input value to number
   const num = Number($(this).val());
   // if it's a number
@@ -75,7 +76,6 @@ $(".inputfield2.w-input").change(function () {
   } else {
     console.log("Not a number");
   }
-  $(".summarytextright").text(" " + extrashoursum() + " hours");
 });
 // Declarations
 
@@ -196,3 +196,5 @@ $("#extraboxOven").click(function () {
     console.log("made true");
   }
 });
+
+$(".summarytextright").text(" " + extrashoursum() + " hours");
