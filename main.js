@@ -172,6 +172,8 @@ $("#extraboxIroning").click(function () {
     $(".summaryprice").text(finalprice() + " GBP");
     // hide tag
     $("#ironingtag").hide();
+    // deactivate border
+    $("extraboxIroning").style.border = "0px solid #1327ff";
   }
 });
 
