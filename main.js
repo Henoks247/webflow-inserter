@@ -1,7 +1,7 @@
 console.log("code link functionality check");
 
-console.log("(.extraheading).text()");
-
+console.log(".extraheading.text()");
+$(".extraheading").text("Tester Text");
 // let x = 0;
 // // on button click
 // document.getElementById("minusdiv1").on("click", () => {
