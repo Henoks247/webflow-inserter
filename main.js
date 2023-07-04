@@ -75,3 +75,18 @@ $(".inputfield2.w-input").change(function () {
     console.log("Not a number");
   }
 });
+
+// Listen and log clicks
+// declare state
+let extraboxIroningstate = true;
+
+$("#extraboxIroning").click(function () {
+  // if here
+  if (extraboxIroningstate) {
+    extraboxIroningstate = false;
+    console.log("made false");
+  } else {
+    extraboxIroningstate = true;
+    console.log("made true");
+  }
+});
