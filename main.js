@@ -37,6 +37,7 @@ $(".inputfield1.w-input").change(function () {
   } else {
     console.log("Not a number");
   }
+  $(".summarytextright").text() = " " + extrashoursum + " hours";
 });
 
 // For bathrooms
@@ -74,6 +75,7 @@ $(".inputfield2.w-input").change(function () {
   } else {
     console.log("Not a number");
   }
+  $(".summarytextright").text() = " " + extrashoursum + " hours";
 });
 // Declarations
 
@@ -195,6 +197,6 @@ $("#extraboxOven").click(function () {
   }
 });
 
-summarytextright = text;
+
 
 $(".summarytextright").text() = " " + extrashoursum + " hours";
