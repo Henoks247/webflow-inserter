@@ -1,6 +1,6 @@
 console.log("code link functionality check");
 
-// console.log("I am working!");
+console.log(".extraheading");
 
 // let x = 0;
 // // on button click
