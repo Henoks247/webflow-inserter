@@ -10,6 +10,7 @@ $(".plusdiv1").on("click", () => {
   console.log("get success");
   // increment & set new value
   $(".inputfield1.w-input").val(++bedroomx);
+
   $(".summaryhours").text(finalhour() + " hours");
   $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
   $(".summaryprice").text(finalprice() + " GBP");
@@ -20,7 +21,9 @@ $(".minusdiv1").on("click", () => {
   if (bedroomx > 0) {
     $(".inputfield1.w-input").val(--bedroomx);
   }
-  $(".summarytextright").text(" " + extrashoursum() + " hours");
+  $(".summaryhours").text(finalhour() + " hours");
+  $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
+  $(".summaryprice").text(finalprice() + " GBP");
 });
 
 /* This next part was added post-video recording added
@@ -51,6 +54,10 @@ $(".plusdiv2").on("click", () => {
   console.log("get success");
   // increment & set new value
   $(".inputfield2.w-input").val(++bathroomx);
+
+  $(".summaryhours").text(finalhour() + " hours");
+  $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
+  $(".summaryprice").text(finalprice() + " GBP");
 });
 
 $(".minusdiv2").on("click", () => {
@@ -58,6 +65,9 @@ $(".minusdiv2").on("click", () => {
   if (bathroomx > 0) {
     $(".inputfield2.w-input").val(--bathroomx);
   }
+  $(".summaryhours").text(finalhour() + " hours");
+  $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
+  $(".summaryprice").text(finalprice() + " GBP");
 });
 
 /* This next part was added post-video recording added
@@ -142,10 +152,15 @@ $("#extraboxIroning").click(function () {
   if (extraboxIroningstate) {
     extraboxIroningstate = false;
     console.log("made false");
+    $(".summaryhours").text(finalhour() + " hours");
+    $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
+    $(".summaryprice").text(finalprice() + " GBP");
   } else {
     extraboxIroningstate = true;
     console.log("made true");
-    console.log(extrashoursum(), bedbathhoursum());
+    $(".summaryhours").text(finalhour() + " hours");
+    $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
+    $(".summaryprice").text(finalprice() + " GBP");
   }
 });
 
@@ -158,10 +173,15 @@ $("#extraboxLaundry").click(function () {
   if (extraboxLaundrystate) {
     extraboxLaundrystate = false;
     console.log("made false");
-    console.log(extraboxLaundrystate);
+    $(".summaryhours").text(finalhour() + " hours");
+    $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
+    $(".summaryprice").text(finalprice() + " GBP");
   } else {
     extraboxLaundrystate = true;
     console.log("made true");
+    $(".summaryhours").text(finalhour() + " hours");
+    $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
+    $(".summaryprice").text(finalprice() + " GBP");
   }
 });
 
@@ -174,9 +194,15 @@ $("#extraboxWindows").click(function () {
   if (extraboxWindowsstate) {
     extraboxWindowsstate = false;
     console.log("made false");
+    $(".summaryhours").text(finalhour() + " hours");
+    $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
+    $(".summaryprice").text(finalprice() + " GBP");
   } else {
     extraboxWindowsstate = true;
     console.log("made true");
+    $(".summaryhours").text(finalhour() + " hours");
+    $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
+    $(".summaryprice").text(finalprice() + " GBP");
   }
 });
 
@@ -189,9 +215,15 @@ $("#extraboxFridge").click(function () {
   if (extraboxFridgestate) {
     extraboxFridgestate = false;
     console.log("made false");
+    $(".summaryhours").text(finalhour() + " hours");
+    $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
+    $(".summaryprice").text(finalprice() + " GBP");
   } else {
     extraboxFridgestate = true;
     console.log("made true");
+    $(".summaryhours").text(finalhour() + " hours");
+    $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
+    $(".summaryprice").text(finalprice() + " GBP");
   }
 });
 
@@ -204,8 +236,14 @@ $("#extraboxOven").click(function () {
   if (extraboxOvenstate) {
     extraboxOvenstate = false;
     console.log("made false");
+    $(".summaryhours").text(finalhour() + " hours");
+    $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
+    $(".summaryprice").text(finalprice() + " GBP");
   } else {
     extraboxOvenstate = true;
     console.log("made true");
+    $(".summaryhours").text(finalhour() + " hours");
+    $(".small-descriptive-quantity").text(finalhour() + " hours at 18GBP/hr");
+    $(".summaryprice").text(finalprice() + " GBP");
   }
 });
