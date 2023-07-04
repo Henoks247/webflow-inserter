@@ -98,6 +98,7 @@ function extrashoursum() {
   if ((extraboxWindowsstate = false)) {
     ++x;
   }
+  console.log(x);
   return x;
 }
 
@@ -108,7 +109,7 @@ let extraboxIroningstate = true;
 
 $("#extraboxIroning").click(function () {
   // if here
-  if (extraboxIroningstate) {
+  if ((extraboxIroningstate = true)) {
     extraboxIroningstate = false;
     console.log("made false");
   } else {
@@ -125,7 +126,7 @@ let extraboxLaundrystate = true;
 
 $("#extraboxLaundry").click(function () {
   // if here
-  if (extraboxLaundrystate) {
+  if ((extraboxLaundrystate = true)) {
     extraboxLaundrystate = false;
     console.log("made false");
     console.log(extraboxLaundrystate);
@@ -142,7 +143,7 @@ let extraboxWindowsstate = true;
 
 $("#extraboxWindows").click(function () {
   // if here
-  if (extraboxWindowsstate) {
+  if ((extraboxWindowsstate = true)) {
     extraboxWindowsstate = false;
     console.log("made false");
   } else {
@@ -158,7 +159,7 @@ let extraboxFridgestate = true;
 
 $("#extraboxFridge").click(function () {
   // if here
-  if (extraboxFridgestate) {
+  if ((extraboxFridgestate = true)) {
     extraboxFridgestate = false;
     console.log("made false");
   } else {
@@ -174,7 +175,7 @@ let extraboxOvenstate = true;
 
 $("#extraboxOven").click(function () {
   // if here
-  if (extraboxOvenstate) {
+  if ((extraboxOvenstate = true)) {
     extraboxOvenstate = false;
     console.log("made false");
   } else {
