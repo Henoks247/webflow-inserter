@@ -163,7 +163,7 @@ $("#extraboxIroning").click(function () {
     // display tag
     $("#ironingtag").show();
     // activate border
-    $("extraboxIroning").style.border = "1px solid #1327ff";
+    $("#extraboxIroning").style.border = "1px solid #1327ff";
   } else {
     extraboxIroningstate = true;
     console.log("made true");
@@ -173,7 +173,7 @@ $("#extraboxIroning").click(function () {
     // hide tag
     $("#ironingtag").hide();
     // deactivate border
-    $("extraboxIroning").style.border = "0px solid #1327ff";
+    $("#extraboxIroning").style.border = "0px solid #ececec";
   }
 });
 
