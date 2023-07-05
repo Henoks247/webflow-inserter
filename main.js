@@ -173,7 +173,7 @@ $("#extraboxIroning").click(function () {
     // hide tag
     $("#ironingtag").hide();
     // deactivate border
-    $("#extraboxIroning").style.border = "0px solid #ececec";
+    $("#extraboxIroning").style.border = "1px solid #ececec";
   }
 });
 
