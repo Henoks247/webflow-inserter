@@ -164,11 +164,9 @@ $("#extraboxIroning").click(function () {
     $("#ironingtag").show();
     // activate border
     $("#extraboxIroning").style.border = "1px solid #1327ff";
-    const app = document.querySelector(`#app`);
+    const app = document.querySelector(`#extraboxIroning`);
 
     // set each style property separately
-    app.style.borderRadius = "4em";
-
     app.style.border = "1px solid red";
   } else {
     extraboxIroningstate = true;
